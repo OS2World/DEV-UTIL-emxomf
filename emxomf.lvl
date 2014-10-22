@@ -1,0 +1,11 @@
+
+emxomf testcase
+
+modified to not die if HLL reference index for BSS symbol out of range
+HLL will not be available for affected symbols.
+
+Built from svn revision 3859
+
+ 4-20-14  15:06         209,856      0  emxomf.exe
+
+83b7900e57e2f3e4130a10b156136451 *emxomf.exe

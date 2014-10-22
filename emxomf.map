@@ -1,0 +1,327 @@
+** EXPERIMENTAL (HLL) ** Open Watcom Linker Version 1.6beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       14/04/20 15:06:29
+Executable Image: out/dbg/omf/emxomf.exe
+creating an OS/2 EMX executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        0001d370
+DGROUP                          0002:00000000        00001570
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   0001d368
+________TEXT           CODE           CGROUP         0001:0001d370   00000000
+DATA32                 DATA           DGROUP         0002:00000000   00000090
+SET1__os2dll           DATA           DGROUP         0002:00000090   00000004
+SET2__os2dll           DATA           DGROUP         0002:00000094   00000000
+SET3__os2dll           DATA           DGROUP         0002:00000094   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:00000098   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:0000009c   00000000
+SET3___CTOR_LIST__     DATA           DGROUP         0002:0000009c   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:000000a0   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:000000a4   00000000
+SET3___DTOR_LIST__     DATA           DGROUP         0002:000000a4   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:000000a8   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:000000ac   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:000000ac   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:000000b0   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:000000b4   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:000000b4   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:000000b8   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:000000bc   00000000
+SET3___eh_frame__      DATA           DGROUP         0002:000000bc   00000004
+SET1___eh_init__       DATA           DGROUP         0002:000000c0   00000004
+SET2___eh_init__       DATA           DGROUP         0002:000000c4   00000000
+SET3___eh_init__       DATA           DGROUP         0002:000000c4   00000004
+SET1___eh_term__       DATA           DGROUP         0002:000000c8   00000004
+SET2___eh_term__       DATA           DGROUP         0002:000000cc   00000000
+SET3___eh_term__       DATA           DGROUP         0002:000000cc   00000004
+SET1___fork_parent1__  DATA           DGROUP         0002:000000d0   00000004
+SET2___fork_parent1__  DATA           DGROUP         0002:000000d4   00000000
+SET3___fork_parent1__  DATA           DGROUP         0002:000000d4   00000004
+SET1___fork_child1__   DATA           DGROUP         0002:000000d8   00000004
+SET2___fork_child1__   DATA           DGROUP         0002:000000dc   00000004
+SET3___fork_child1__   DATA           DGROUP         0002:000000e0   00000004
+________DATA           DATA           DGROUP         0002:000000f0   00000000
+BSS32                  BSS            DGROUP         0002:000000f0   00001480
+c_common               BSS            DGROUP         0002:00001570   00000000
+________BSS            BSS            DGROUP         0002:00001570   00000000
+STACK                  STACK          AUTO           0003:00000000   00100000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: D:\gcc335\usr\lib\crt0hi.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:000000f0* ___bss_start
+0002:00000090+ __os2dll
+0002:00000098  ___CTOR_LIST__
+0002:000000a0  ___DTOR_LIST__
+0002:000000a8* ___crtinit1__
+0002:000000b0* ___crtexit1__
+0002:000000b8* ___eh_frame__
+0002:000000c0  ___eh_init__
+0002:000000c8  ___eh_term__
+0002:000000d0+ ___fork_parent1__
+0002:000000d8+ ___fork_child1__
+Module: Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\src\emxomf\emxomf.o(Z:\sla_dev2\libc-0.6-branch\emx\src\emxomf\emxomf.c)
+0001:00000041  _error
+0001:000000d3  _warning
+0001:0000012f  _xmalloc
+0001:00000164  _xrealloc
+0001:0000019c  _xstrdup
+0001:000001d3  _find_symbol_ex
+0001:0000039f  _find_symbol
+0001:000003f9  _set_hll_type
+0001:00007fbe  _main
+0002:00000050* _hll_version
+0002:000000f0  _sym_count
+0002:000000f4  _sym_ptr
+0002:000000f8  _str_ptr
+0002:000000fc  _text_ptr
+0002:00000100  _text_size
+0002:00000104  _tt
+0002:00000110  _sst
+0002:0000011c  _sst_reloc
+0002:00000128  _sst_boundary_grow
+0002:0000013c  _tt_boundary_grow
+0002:00000150  _sst_boundary
+0002:00000154  _tt_boundary
+0001:00007fbe* main
+Module: Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\src\emxomf\stabshll.o(Z:\sla_dev2\libc-0.6-branch\emx\src\emxomf\stabshll.c)
+0001:0000f855  _convert_debug
+Module: Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\src\emxomf\grow.o(I:\sla_dev2\libc-0.6-branch\emx\src\emxomf\grow.c)
+0001:0000ff80  _grow_init
+0001:0000ffbf  _grow_free
+0001:00010017  _grow_to
+0001:0001007b  _grow_by
+0001:0001009c  _buffer_init
+0001:000100be  _buffer_free
+0001:00010140  _buffer_byte
+0001:00010177  _buffer_word
+0001:000101c9  _buffer_dword
+0001:00010242  _buffer_mem
+0001:00010285  _buffer_nstr
+0001:000102ed  _buffer_enc
+0001:00010373  _buffer_patch_word
+0001:000103a8  _strpool_init
+0001:000103ec  _strpool_free
+0001:0001044d  _strpool_addn
+0001:00010565  _strpool_add
+0001:000105a2* _strpool_addnu
+0001:000106dc* _strpool_addu
+Module: D:\gcc335\usr\lib\libend.lib(src/libend/386/endlink386.asm)
+0002:00001570  _end
+0002:000000f0  _edata
+Module: D:\gcc335\usr\lib\libend.lib(src/libend/386/end.asm)
+0001:0001d370* _etext
+0001:0001d370* __etext
+0000:00000000* WEAK$ZERO
+0002:00001570  __end
+0002:000000f0  __edata
+Module: Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\libomflib.lib(omflibwr.obj)
+0001:00010750  _omflib_write_record
+0001:00010a5a  _omflib_write_module
+Module: Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\libomflib.lib(omflibap.obj)
+0001:00010ba8  _omflib_add_pub
+Module: Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\libomflib.lib(omflibcr.obj)
+0001:00010d15  _omflib_create
+0001:00010eb9  _omflib_header
+0001:000116be  _omflib_pad
+0001:00011439  _omflib_finish
+Module: Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\libomflib.lib(omflibut.obj)
+0001:00011730  _omflib_set_error
+0001:00011764  _omflib_close
+0001:00011850  _omflib_hash
+0001:000119a4  _omflib_module_name
+Module: F:\var\temp\ldconv_libgcc_so_d_a_481535444e3171868.lib(__main.obj)
+0001:00011a50* ___do_global_dtors
+0001:00011a56* ___do_global_ctors
+0001:00011a66* ___POST$__do_global_ctors
+0001:00011a68  ___main
+0001:00011a72* ___POST$__main
+Module: F:\var\temp\ldconv_libiberty_a_481535444e217c060.lib(getopt.obj)
+0001:00011da4  __getopt_internal
+0001:000127bc* _getopt
+0002:00000070  _optind
+0002:00000074  _opterr
+0002:00000078* _optopt
+0002:000014c0  _optarg
+0002:000014c4* ___getopt_initialized
+Module: F:\var\temp\ldconv_libiberty_a_481535444e217c060.lib(getopt1.obj)
+0001:000127e0  _getopt_long
+0001:00012802* _getopt_long_only
+Module: F:\var\temp\ldconv_libiberty_a_481535444e217c060.lib(cplus-dem.obj)
+0001:00012830* _set_cplus_marker_for_demangling
+0001:00012f70* _libiberty_demanglers
+0001:00013228* _cplus_demangle_opname
+0001:0001368c* _cplus_mangle_opname
+0001:0001370e* _cplus_demangle_set_style
+0001:0001373c* _cplus_demangle_name_to_style
+0001:0001377c  _cplus_demangle
+0002:00000080* _current_demangling_style
+Module: F:\var\temp\ldconv_libgcc_so_d_a_481535444e3171868.lib(emx-ctordtor.obj)
+0001:00018810  ___ctordtorInit
+0001:0001881a* ___POST$__ctordtorInit
+0001:0001883e  ___ctordtorTerm
+0001:00018848* ___POST$__ctordtorTerm
+Module: F:\var\temp\ldconv_libiberty_a_481535444e217c060.lib(safe-ctype.obj)
+0001:000188d0  __sch_istable
+0001:00018ad0* __sch_tolower
+0001:00018bd0* __sch_toupper
+Module: F:\var\temp\ldconv_libiberty_a_481535444e217c060.lib(cp-demangle.obj)
+0001:0001cbb8  _cplus_demangle_v3
+0001:0001cc62  _java_demangle_v3
+0001:0001ce82* _is_gnu_v3_mangled_ctor
+0001:0001ceaa* _is_gnu_v3_mangled_dtor
+Module: F:\var\temp\ldconv_libiberty_a_481535444e217c060.lib(dyn-string.obj)
+0001:0001cef0  _dyn_string_init
+0001:0001cf26  _dyn_string_new
+0001:0001cf46  _dyn_string_delete
+0001:0001cf66  _dyn_string_release
+0001:0001cf86  _dyn_string_resize
+0001:0001cfbc  _dyn_string_clear
+0001:0001cfd2  _dyn_string_copy
+0001:0001d01c  _dyn_string_copy_cstr
+0001:0001d05e* _dyn_string_prepend
+0001:0001d08a  _dyn_string_insert
+0001:0001d074* _dyn_string_prepend_cstr
+0001:0001d10a  _dyn_string_insert_cstr
+0001:0001d17e  _dyn_string_insert_char
+0001:0001d1d2* _dyn_string_append
+0001:0001d222  _dyn_string_append_cstr
+0001:0001d274  _dyn_string_append_char
+0001:0001d2ba  _dyn_string_substring
+0001:0001d32e* _dyn_string_eq
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___libc_ForkRegisterModule          libc065
+___init_app                         libc065
+__CRT_init                          libc065
+__atfork_callback                   libc065
+___stderrp                          libc065
+__assert                            libc065
+___umoddi3                          libc065
+___udivdi3                          libc065
+__errno                             libc065
+__alloca                            libc065
+__strncpy                           libc065
+__getdrive                          libc065
+__splitpath                         libc065
+__remext                            libc065
+__emxload_env                       libc065
+__envargs                           libc065
+__response                          libc065
+__wildcard                          libc065
+___libc_GLocaleCtype                libc065
+__std_exit                          libc065
+__std_fprintf                       libc065
+__std_vfprintf                      libc065
+__std_fputc                         libc065
+__std_fclose                        libc065
+__std_remove                        libc065
+__std_malloc                        libc065
+__std_realloc                       libc065
+__std_strlen                        libc065
+__std_strcpy                        libc065
+__std_memcmp                        libc065
+__std_strcmp                        libc065
+__std_free                          libc065
+__std_fwrite                        libc065
+__std_strstr                        libc065
+__std_memcpy                        libc065
+__std_gettimeofday                  libc065
+__std_rand                          libc065
+__std_snprintf                      libc065
+__std_strncmp                       libc065
+__std_qsort                         libc065
+__std_strcat                        libc065
+__std_memset                        libc065
+__std_fread                         libc065
+__std_ferror                        libc065
+__std_abort                         libc065
+__std_strchr                        libc065
+__std_strtol                        libc065
+__std_memmove                       libc065
+__std_getcwd                        libc065
+__std_getenv                        libc065
+__std_stricmp                       libc065
+__std_puts                          libc065
+__std_fopen                         libc065
+__std_fflush                        libc065
+__std_fseek                         libc065
+__std_stat                          libc065
+__std_sprintf                       libc065
+__getname                           libc065
+__std_ftell                         libc065
+__std_atoi                          libc065
+__std_printf                        libc065
+__std_time                          libc065
+__std_localtime                     libc065
+__std_strupr                        libc065
+__std_strerror                      libc065
+__std_strdup                        libc065
+__std_memicmp                       libc065
+___ctordtorInit1                    libc065
+___ctordtorTerm1                    libc065
+__std_atexit                        libc065
+__std_strncat                       libc065
+__std_strncpy                       libc065
+__std_strspn                        libc065
+__std_strpbrk                       libc065
+__std_strcspn                       libc065
+__std_sscanf                        libc065
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+Z:\sla_dev2\libc-0.6-branch\emx\out\dbg\omf\libomflib.lib
+F:\var\temp\ldconv_libiberty_a_481535444e217c060.lib
+D:\gcc335\usr\lib\libc_alias.lib
+D:\gcc335\usr\lib\libc_dll.lib
+F:\var\temp\ldconv_libgcc_so_d_a_481535444e3171868.lib
+D:\gcc335\usr\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  0011e8e0 (1173728.)
+Entry point address: 0001:00000000
+Link time: 00:00.99
